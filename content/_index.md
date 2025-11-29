@@ -31,7 +31,7 @@ sections:
       # For full-screen, add `min-h-screen` below
       css_class: "dark"
       background:
-        color: "navy"
+        color: "red"
         image:
           # Add your image background to `assets/media/`.
           filename: bg-triangles.svg
@@ -40,6 +40,22 @@ sections:
           size: cover
           position: center
           parallax: false
+  - block: resume-biography
+    content:
+      username: "admin"
+      text: "This is sample text content for the section."
+      button:
+        text: "Click Here"
+        url: "https://example.com"
+    design:
+      background:
+        color: ""
+        # gradient_start: "#4f46e5"
+        # gradient_end: "#7c3aed"
+        # text_color_light: true
+      # spacing:
+      #   padding: ["6", "6", "6", "6"]
+      # columns: "1"
   - block: stats
     content:
       items:
