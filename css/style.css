@@ -1203,3 +1203,55 @@ ul.social_icon li a:hover {
 .inner_page .blog {
      margin-top: 90px;
 }
+
+/* --- Mobile Fixes for Banner and Header --- */
+@media (max-width: 768px) {
+/* Fix header height and center logo */
+.header {
+    height: auto !important;
+    padding: 10px 15px !important;
+}
+
+/* Hide the 310px wide background decoration that causes side-scrolling */
+.logo::before {
+    display: none !important;
+}
+
+/* Center the navigation button */
+.navigation.navbar {
+    float: none !important;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+/* Scale the massive 75px banner text for phones */
+.yoga_box {
+    padding-top: 15% !important;
+    text-align: center;
+}
+
+.yoga_box h1 {
+    font-size: 32px !important;
+    line-height: 38px !important;
+}
+
+/* Fix the banner images that are hard-coded to 500px */
+.yo_img figure {
+    height: auto !important;
+}
+
+.yo_img figure img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+/* Move carousel arrows so they don't overlap the text */
+#myCarousel .carousel-control-prev, 
+#myCarousel .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    top: 80%;
+}
