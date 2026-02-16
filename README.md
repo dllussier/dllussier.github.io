@@ -1,3 +1,3 @@
 Fitness website
 
-https://yogafit.it.com
+http://adaptivefitnesslab.com
