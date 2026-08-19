@@ -1237,15 +1237,23 @@ ul.social_icon li a:hover {
     line-height: 38px !important;
 }
 
-/* Fix the banner images that are hard-coded to 500px */
+/* Fix banner stretching */
+.full_bg {
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+/* Standardize carousel images to identical size */
 .yo_img figure {
-    height: auto !important;
+    height: 250px !important; /* Set fixed container height */
+    overflow: hidden;
 }
 
 .yo_img figure img {
     width: 100% !important;
-    height: auto !important;
-    max-width: 320px;
+    height: 100% !important;
+    object-fit: cover !important; /* Forces uniform dimensions without stretching */
+    max-width: none !important;
     margin: 0 auto;
 }
 
