@@ -1208,30 +1208,18 @@ ul.social_icon li a:hover {
 /* --- Mobile Fixes for Banner and Header --- */
 @media screen and (max-width: 1024px) {
 
-/* Fix header height, keep logo properly proportioned */
+/* Fix header height and center logo */
 .header {
     height: auto !important;
     padding: 10px 15px !important;
 }
 
-.logo {
-    display: block !important;
-    text-align: center !important;
-}
-
-.logo img {
-    width: auto !important;
-    height: auto !important;
-    max-width: 200px !important; /* Preserves rectangular aspect ratio */
-    display: inline-block !important;
-}
-
-/* Hide background decoration causing side-scrolling */
+/* Hide the 310px wide background decoration that causes side-scrolling */
 .logo::before {
     display: none !important;
 }
 
-/* Center navigation button */
+/* Center the navigation button */
 .navigation.navbar {
     float: none !important;
     text-align: center;
@@ -1239,7 +1227,7 @@ ul.social_icon li a:hover {
     display: block;
 }
 
-/* Scale banner text */
+/* Scale the massive 75px banner text for phones & tablets */
 .yoga_box {
     padding-top: 15% !important;
     text-align: center;
@@ -1250,7 +1238,7 @@ ul.social_icon li a:hover {
     line-height: 38px !important;
 }
 
-/* Fix background stretching */
+/* Fix banner background stretching */
 .full_bg {
     background-image: url(../images/banner2.jpg) !important;
     background-size: cover !important;
@@ -1259,30 +1247,21 @@ ul.social_icon li a:hover {
     background-attachment: scroll !important;
 }
 
-/* Carousel Image Sizing Fix - Full Width & Equal Dimensions */
-.yo_img {
-    width: 100% !important;
-    display: block !important;
-}
-
+/* Standardize carousel images */
 .yo_img figure {
-    height: auto !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 auto !important;
-    display: block !important;
+    height: 250px !important;
+    overflow: hidden;
 }
 
 .yo_img figure img {
     width: 100% !important;
-    height: 350px !important; /* Ensures uniform height across all 3 slides */
-    max-width: 100% !important;
-    object-fit: cover !important; /* Fills full width without distorting proportions */
-    object-position: center !important;
-    display: block !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    max-width: none !important;
+    margin: 0 auto;
 }
 
-/* Move carousel arrows */
+/* Move carousel arrows so they don't overlap text */
 #myCarousel .carousel-control-prev, 
 #myCarousel .carousel-control-next {
     width: 50px;
@@ -1291,4 +1270,5 @@ ul.social_icon li a:hover {
 }
 
 }
+
 
