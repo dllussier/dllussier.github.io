@@ -357,12 +357,6 @@ button {
      width: 100%;
 }
 
-.yo_img figure img {
-     width: 100%;
-     height: 100%;
-     object-fit: contain;
-}
-
 .yoga_box h1 strong {
      color: #fff;
 }
