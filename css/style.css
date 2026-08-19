@@ -1238,7 +1238,7 @@ ul.social_icon li a:hover {
     line-height: 38px !important;
 }
 
-/* Fix banner stretching on mobile & iPad */
+/* Fix banner background stretching */
 .full_bg {
     background-image: url(../images/banner2.jpg) !important;
     background-size: cover !important;
@@ -1247,28 +1247,32 @@ ul.social_icon li a:hover {
     background-attachment: scroll !important;
 }
 
-/* Force carousel images to be identical sizes */
+/* Carousel Image Sizing Fix */
 .yo_img {
     width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .yo_img figure {
+    height: auto !important; /* Override fixed 500px desktop height */
     width: 100% !important;
-    height: 280px !important;
-    max-height: 280px !important;
+    max-width: 100% !important;
     margin: 0 auto !important;
-    overflow: hidden !important;
-    display: block !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .yo_img figure img {
     width: 100% !important;
-    height: 100% !important;
-    min-height: 100% !important;
-    object-fit: cover !important;
+    height: 320px !important; /* Forces all 3 images to render at the exact same physical height */
+    max-width: 100% !important;
+    object-fit: contain !important; /* Fits full image inside the frame without cutting off edges */
     object-position: center !important;
-    max-width: none !important;
     display: block !important;
+    margin: 0 auto !important;
 }
 
 /* Move carousel arrows so they don't overlap text */
