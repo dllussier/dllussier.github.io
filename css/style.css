@@ -1207,7 +1207,7 @@ ul.social_icon li a:hover {
 }
 
 /* --- Mobile Fixes for Banner and Header --- */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 .header {
     height: auto !important;
     padding: 10px 15px !important;
@@ -1235,14 +1235,13 @@ ul.social_icon li a:hover {
 }
 
 .yo_img figure {
-    height: 400px !important;
+    height: auto !important;
 }
 
 .yo_img figure img {
     width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    max-width: none;
+    height: auto !important;
+    max-width: 320px;
     margin: 0 auto;
 }
 
@@ -1251,4 +1250,5 @@ ul.social_icon li a:hover {
     width: 50px;
     height: 50px;
     top: 80%;
+}
 }
