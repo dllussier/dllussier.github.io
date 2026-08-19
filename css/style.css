@@ -1206,7 +1206,8 @@ ul.social_icon li a:hover {
 }
 
 /* --- Mobile Fixes for Banner and Header --- */
-@media (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+
 /* Fix header height and center logo */
 .header {
     height: auto !important;
@@ -1226,7 +1227,7 @@ ul.social_icon li a:hover {
     display: block;
 }
 
-/* Scale the massive 75px banner text for phones */
+/* Scale the massive 75px banner text for phones & tablets */
 .yoga_box {
     padding-top: 15% !important;
     text-align: center;
@@ -1237,31 +1238,45 @@ ul.social_icon li a:hover {
     line-height: 38px !important;
 }
 
-/* Fix banner stretching */
+/* Fix banner stretching on mobile & iPad */
 .full_bg {
+    background-image: url(../images/banner2.jpg) !important;
     background-size: cover !important;
-    background-position: center !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
 }
 
-/* Standardize carousel images to identical size */
+/* Force carousel images to be identical sizes */
+.yo_img {
+    width: 100% !important;
+}
+
 .yo_img figure {
-    height: 250px !important; /* Set fixed container height */
-    overflow: hidden;
+    width: 100% !important;
+    height: 280px !important;
+    max-height: 280px !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+    display: block !important;
 }
 
 .yo_img figure img {
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover !important; /* Forces uniform dimensions without stretching */
+    min-height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
     max-width: none !important;
-    margin: 0 auto;
+    display: block !important;
 }
 
-/* Move carousel arrows so they don't overlap the text */
+/* Move carousel arrows so they don't overlap text */
 #myCarousel .carousel-control-prev, 
 #myCarousel .carousel-control-next {
     width: 50px;
     height: 50px;
     top: 80%;
 }
+
 }
