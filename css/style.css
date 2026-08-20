@@ -1206,42 +1206,46 @@ ul.social_icon li a:hover {
 }
 
 /* --- Mobile Fixes for Banner and Header --- */
-@media screen and (max-width: 1024px) {
+/* Expanded to 1366px to capture iPad Pro, iPad Air, and iPad landscape modes */
+@media screen and (max-width: 1366px) {
 
-/* Fix header container padding and alignment */
+/* Stack and center header elements */
 .header {
     height: auto !important;
-    padding: 15px 20px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
+    padding: 20px 15px !important;
+    text-align: center !important;
 }
 
-/* Properly position and center logo element */
+/* Reset negative offsets pulling logo off-screen */
 .logo {
     position: relative !important;
     display: inline-block !important;
-    margin: 0 auto 15px auto !important;
+    float: none !important;
     left: 0 !important;
+    margin: 0 auto 15px auto !important;
 }
 
 .logo::before {
     display: block !important;
-    width: 220px !important;
-    height: 98px !important;
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important; /* Centers background graphic relative to logo */
+    top: -15px !important;
+    width: 250px !important;
+    height: 110px !important;
     background-size: contain !important;
-    left: 10px !important; /* Shifts background graphic inward so it isn't clipped on the left */
-    top: -10px !important;
 }
 
 .logo a img {
+    position: relative !important;
+    z-index: 9999 !important;
     max-width: 180px !important;
     height: auto !important;
-    position: relative !important;
-    left: 20px !important;
+    margin: 0 auto !important;
+    display: block !important;
 }
 
-/* Center navigation links cleanly below logo */
+/* Center navigation links underneath the logo */
 .navigation.navbar {
     float: none !important;
     text-align: center !important;
@@ -1255,17 +1259,18 @@ ul.social_icon li a:hover {
     flex-wrap: wrap !important;
     justify-content: center !important;
     padding: 0 !important;
+    margin: 0 auto !important;
 }
 
-/* Scale banner text for phones & tablets */
+/* Scale banner text */
 .yoga_box {
     padding-top: 15% !important;
-    text-align: center;
+    text-align: center !important;
 }
 
 .yoga_box h1 {
-    font-size: 32px !important;
-    line-height: 38px !important;
+    font-size: 36px !important;
+    line-height: 42px !important;
 }
 
 /* Fix banner background stretching */
@@ -1280,7 +1285,7 @@ ul.social_icon li a:hover {
 /* Standardize carousel images without cutting off edges */
 .yo_img figure {
     height: auto !important;
-    max-height: 350px !important;
+    max-height: 380px !important;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -1288,7 +1293,7 @@ ul.social_icon li a:hover {
 .yo_img figure img {
     width: 100% !important;
     height: auto !important;
-    max-height: 350px !important;
+    max-height: 380px !important;
     object-fit: contain !important;
     margin: 0 auto;
     display: block;
@@ -1303,6 +1308,7 @@ ul.social_icon li a:hover {
 }
 
 }
+
 
 
 
