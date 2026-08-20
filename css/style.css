@@ -1291,7 +1291,7 @@ ul.social_icon li a:hover {
     padding: 10px 15px !important;
 }
 
-/* Scaled-up logo container shifted left */
+/* Logo container */
 .logo {
     float: left !important;
     position: relative !important;
@@ -1299,25 +1299,25 @@ ul.social_icon li a:hover {
     height: 85px !important;
 }
 
-/* Larger white background shape pulled further left */
+/* Keep the white background shape right where it is */
 .logo::before {
     display: block !important;
     position: absolute !important;
-    left: -35px !important; /* Pulls background to the screen edge */
+    left: -35px !important;
     top: -15px !important;
-    width: 260px !important; /* Wide enough so the angled point clears the lotus */
+    width: 260px !important;
     height: 105px !important;
     background-size: contain !important;
     z-index: 1 !important;
 }
 
-/* Moderately sized lotus positioned inside the white field */
+/* Lotus icon: scaled down slightly and shifted left */
 .logo a img {
     position: absolute !important;
-    left: 5px !important; /* Centers flower over the solid white portion */
-    top: 0px !important;
+    left: -10px !important; /* Shifts lotus left toward screen edge */
+    top: 2px !important;
     z-index: 9999 !important;
-    max-width: 90px !important; /* Keeps lotus smaller so it fits cleanly */
+    max-width: 75px !important; /* Scaled down slightly */
     height: auto !important;
 }
 
