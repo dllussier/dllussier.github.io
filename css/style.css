@@ -1365,10 +1365,18 @@ ul.social_icon li a:hover {
     font-size: 34px !important;
     line-height: 40px !important;
 }
-
+/*
 .full_bg {
     background-image: url(../images/banner2.jpg) !important;
     background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+}
+*/
+.full_bg {
+    background-image: url(../images/banner2.jpg) !important;
+    background-size: 100% 100% !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-attachment: scroll !important;
