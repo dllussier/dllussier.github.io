@@ -1291,49 +1291,50 @@ ul.social_icon li a:hover {
     padding: 10px 15px !important;
 }
 
-/* Keeps logo floated left, cleanly contained */
+/* Scaled-down logo container */
 .logo {
     float: left !important;
     position: relative !important;
-    width: 220px !important;
-    height: 80px !important;
+    width: 160px !important;
+    height: 65px !important;
 }
 
-/* Fixes white angled graphic so it stays flush left without cutting off lotus */
+/* Scaled-down white angled background */
 .logo::before {
     display: block !important;
     position: absolute !important;
     left: -15px !important;
     top: -10px !important;
-    width: 220px !important;
-    height: 90px !important;
+    width: 170px !important;
+    height: 75px !important;
     background-size: contain !important;
     z-index: 1 !important;
 }
 
+/* Scaled-down lotus icon centered inside the white shape */
 .logo a img {
     position: absolute !important;
-    left: 20px !important;
-    top: 5px !important;
+    left: 8px !important;
+    top: 2px !important;
     z-index: 9999 !important;
-    max-width: 110px !important;
+    max-width: 75px !important; /* Scaled down so the lotus fits cleanly */
     height: auto !important;
 }
 
-/* Restores side-by-side navigation layout */
+/* Navigation layout */
 .navigation.navbar {
     float: right !important;
-    margin-top: 10px !important;
+    margin-top: 5px !important;
 }
 
 .navigation.navbar ul {
     display: flex !important;
     flex-wrap: wrap !important;
     justify-content: flex-end !important;
-    gap: 10px !important;
+    gap: 8px !important;
 }
 
-/* Fixed Carousel height stops banner moving vertically between slides */
+/* Fixed Carousel height */
 .yo_img figure {
     height: 350px !important;
     width: 100% !important;
@@ -1375,8 +1376,6 @@ ul.social_icon li a:hover {
 }
 
 }
-
-
 
 
 
