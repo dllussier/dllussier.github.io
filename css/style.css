@@ -1291,33 +1291,33 @@ ul.social_icon li a:hover {
     padding: 10px 15px !important;
 }
 
-/* Scaled-down logo container */
+/* Scaled-up logo container shifted left */
 .logo {
     float: left !important;
     position: relative !important;
-    width: 160px !important;
-    height: 65px !important;
+    width: 210px !important;
+    height: 85px !important;
 }
 
-/* Scaled-down white angled background */
+/* Larger white background shape pulled further left */
 .logo::before {
     display: block !important;
     position: absolute !important;
-    left: -15px !important;
-    top: -10px !important;
-    width: 170px !important;
-    height: 75px !important;
+    left: -35px !important; /* Pulls background to the screen edge */
+    top: -15px !important;
+    width: 260px !important; /* Wide enough so the angled point clears the lotus */
+    height: 105px !important;
     background-size: contain !important;
     z-index: 1 !important;
 }
 
-/* Scaled-down lotus icon centered inside the white shape */
+/* Moderately sized lotus positioned inside the white field */
 .logo a img {
     position: absolute !important;
-    left: 8px !important;
-    top: 2px !important;
+    left: 5px !important; /* Centers flower over the solid white portion */
+    top: 0px !important;
     z-index: 9999 !important;
-    max-width: 75px !important; /* Scaled down so the lotus fits cleanly */
+    max-width: 90px !important; /* Keeps lotus smaller so it fits cleanly */
     height: auto !important;
 }
 
@@ -1376,8 +1376,3 @@ ul.social_icon li a:hover {
 }
 
 }
-
-
-
-
-
