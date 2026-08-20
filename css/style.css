@@ -1311,7 +1311,7 @@ ul.social_icon li a:hover {
     z-index: 1 !important;
 }
 
-/* Lotus icon */
+/* Lotus icon (Working layout restored) */
 .logo a img {
     position: absolute !important;
     left: -10px !important;
@@ -1334,9 +1334,10 @@ ul.social_icon li a:hover {
     gap: 8px !important;
 }
 
-/* Expanded Carousel Frame to show full silhouette */
+/* Carousel Frame Restored */
 .yo_img figure {
-    height: 480px !important; /* Increased height to fit full graphic */
+    height: auto !important;
+    max-height: 420px !important;
     width: 100% !important;
     overflow: hidden !important;
     margin: 0 auto !important;
@@ -1345,8 +1346,8 @@ ul.social_icon li a:hover {
 .yo_img figure img {
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover !important; /* Fills container seamlessly */
-    object-position: center bottom !important; /* Keeps base aligned */
+    object-fit: contain !important; /* Fits entire image without cropping edges */
+    object-position: center !important;
     display: block !important;
 }
 
