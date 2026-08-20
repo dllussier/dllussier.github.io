@@ -1291,7 +1291,7 @@ ul.social_icon li a:hover {
     padding: 10px 15px !important;
 }
 
-/* Logo container */
+/* Fixed Logo Container */
 .logo {
     float: left !important;
     position: relative !important;
@@ -1299,7 +1299,7 @@ ul.social_icon li a:hover {
     height: 85px !important;
 }
 
-/* White background shape */
+/* White background graphic shape */
 .logo::before {
     display: block !important;
     position: absolute !important;
@@ -1311,7 +1311,7 @@ ul.social_icon li a:hover {
     z-index: 1 !important;
 }
 
-/* Lotus icon (Working layout restored) */
+/* Lotus icon centered inside the white graphic */
 .logo a img {
     position: absolute !important;
     left: -10px !important;
@@ -1321,7 +1321,7 @@ ul.social_icon li a:hover {
     height: auto !important;
 }
 
-/* Navigation layout */
+/* Right-aligned Navigation */
 .navigation.navbar {
     float: right !important;
     margin-top: 5px !important;
@@ -1334,10 +1334,9 @@ ul.social_icon li a:hover {
     gap: 8px !important;
 }
 
-/* Carousel Frame Restored */
+/* STABLE CAROUSEL FRAME (Prevents height jumping between slides) */
 .yo_img figure {
-    height: auto !important;
-    max-height: 420px !important;
+    height: 350px !important; /* Fixed height locks layout in place */
     width: 100% !important;
     overflow: hidden !important;
     margin: 0 auto !important;
@@ -1346,8 +1345,8 @@ ul.social_icon li a:hover {
 .yo_img figure img {
     width: 100% !important;
     height: 100% !important;
-    object-fit: contain !important; /* Fits entire image without cropping edges */
-    object-position: center !important;
+    object-fit: cover !important;
+    object-position: center center !important;
     display: block !important;
 }
 
