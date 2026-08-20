@@ -1334,12 +1334,12 @@ ul.social_icon li a:hover {
     gap: 8px !important;
 }
 
-/* FORCED UNIFORM CAROUSEL FRAME (Stops jumping & cropping) */
+/* CAROUSEL FRAME (Transparent background to let gradient show) */
 .yo_img figure {
     width: 100% !important;
     height: 360px !important;
     margin: 0 auto !important;
-    background-color: #51187d !important;
+    background: transparent !important; /* Removes the solid purple block */
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -1353,6 +1353,7 @@ ul.social_icon li a:hover {
     object-fit: contain !important;
     object-position: center !important;
     display: block !important;
+    background: transparent !important;
 }
 
 .yoga_box {
@@ -1381,4 +1382,3 @@ ul.social_icon li a:hover {
 }
 
 }
-
