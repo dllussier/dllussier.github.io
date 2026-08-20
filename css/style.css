@@ -1298,20 +1298,21 @@ ul.social_icon li a:hover {
     padding: 15px 20px !important;
 }
 
-/* Keep white graphic intact on tablets where there is room */
+/* Ensure the logo wrapper keeps background graphic and lotus grouped together */
 .logo {
     position: relative !important;
     display: inline-block !important;
     float: left !important;
+    margin-left: 0 !important;
 }
 
 .logo::before {
     display: block !important;
     position: absolute !important;
-    left: -20px !important;
+    left: 0 !important;
     top: -15px !important;
-    width: 260px !important;
-    height: 110px !important;
+    width: 240px !important;
+    height: 100px !important;
     background-size: contain !important;
     z-index: 1 !important;
 }
@@ -1319,18 +1320,33 @@ ul.social_icon li a:hover {
 .logo a img {
     position: relative !important;
     z-index: 9999 !important;
-    max-width: 150px !important;
+    max-width: 120px !important;
     height: auto !important;
-    margin-left: 20px !important;
+    margin-left: 15px !important;
+    margin-top: 5px !important;
     display: block !important;
 }
 
+/* Force navigation to drop below the logo to prevent overlap */
 .navigation.navbar {
-    float: right !important;
+    float: none !important;
+    clear: both !important;
+    width: 100% !important;
+    display: block !important;
+    padding-top: 15px !important;
 }
 
+.navigation.navbar ul {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+}
+
+/* Adjust banner spacing so lowered nav doesn't crowd text */
 .yoga_box {
-    padding-top: 10% !important;
+    padding-top: 5% !important;
     text-align: center !important;
     clear: both !important;
 }
@@ -1372,7 +1388,6 @@ ul.social_icon li a:hover {
 }
 
 }
-
 
 
 
