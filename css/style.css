@@ -1279,24 +1279,15 @@ ul.social_icon li a:hover {
     top: 75%;
 }
 
-/* Fix section photo proportions without affecting banner */
-.about_img, 
-.about_img figure,
-.classes_img,
-.classes_img figure {
+/* Target body section images to stop vertical stretching */
+.about img, 
+.classes img, 
+[class*="about"] img, 
+[class*="class"] img {
     width: 100% !important;
     height: auto !important;
-    overflow: hidden !important;
-}
-
-.about_img img, 
-.about_img figure img,
-.classes_img img,
-.classes_img figure img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    object-position: center !important;
+    max-height: none !important;
+    object-fit: contain !important;
     display: block !important;
 }
 
@@ -1411,24 +1402,15 @@ ul.social_icon li a:hover {
     top: 80%;
 }
 
-/* Fix section photo proportions without affecting banner */
-.about_img, 
-.about_img figure,
-.classes_img,
-.classes_img figure {
+/* Target body section images to stop vertical stretching */
+.about img, 
+.classes img, 
+[class*="about"] img, 
+[class*="class"] img {
     width: 100% !important;
     height: auto !important;
-    overflow: hidden !important;
-}
-
-.about_img img, 
-.about_img figure img,
-.classes_img img,
-.classes_img figure img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    object-position: center !important;
+    max-height: none !important;
+    object-fit: contain !important;
     display: block !important;
 }
 
