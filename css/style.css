@@ -1279,6 +1279,28 @@ ul.social_icon li a:hover {
     top: 75%;
 }
 
+/* Fix section photo proportions without affecting banner */
+.about_img, 
+.about_img figure,
+.classes_img,
+.classes_img figure {
+    width: 100% !important;
+    height: auto !important;
+    overflow: hidden !important;
+}
+
+.about_img img, 
+.about_img figure img,
+.classes_img img,
+.classes_img figure img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+}
+
+
 }
 
 /* =========================================================
@@ -1388,5 +1410,27 @@ ul.social_icon li a:hover {
     height: 50px;
     top: 80%;
 }
+
+/* Fix section photo proportions without affecting banner */
+.about_img, 
+.about_img figure,
+.classes_img,
+.classes_img figure {
+    width: 100% !important;
+    height: auto !important;
+    overflow: hidden !important;
+}
+
+.about_img img, 
+.about_img figure img,
+.classes_img img,
+.classes_img figure img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+}
+
 
 }
