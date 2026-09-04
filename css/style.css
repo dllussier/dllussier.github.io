@@ -1433,4 +1433,10 @@ ul.social_icon li a:hover {
     background: transparent !important;
 }
 
+.about_img,
+.yoga_img {
+    align-self: flex-start !important;
+}
+
+
 }
