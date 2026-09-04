@@ -1282,6 +1282,7 @@ ul.social_icon li a:hover {
 .about_img figure,
 .yoga_img figure {
     height: 280px !important;
+    width: calc(100% - 40px) !important;
     overflow: hidden !important;
     display: flex !important;
     align-items: center !important;
@@ -1412,6 +1413,7 @@ ul.social_icon li a:hover {
 .about_img figure,
 .yoga_img figure {
     height: 360px !important;
+    width: calc(100% - 60px) !important;
     overflow: hidden !important;
     display: flex !important;
     align-items: center !important;
