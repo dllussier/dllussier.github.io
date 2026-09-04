@@ -1279,17 +1279,23 @@ ul.social_icon li a:hover {
     top: 75%;
 }
 
-/* Target body section images to stop vertical stretching */
-.about img, 
-.classes img, 
-[class*="about"] img, 
-[class*="class"] img {
-    width: 100% !important;
+/* Direct fix for body section photos */
+.about_section img,
+.classes_section img,
+.classes_main img,
+.main_about img {
     height: auto !important;
-    max-height: none !important;
+    max-height: 100% !important;
     object-fit: contain !important;
-    display: block !important;
 }
+
+.about_section .row,
+.classes_section .row,
+.classes_main .row,
+.main_about .row {
+    align-items: center !important;
+}
+
 
 
 }
@@ -1402,17 +1408,23 @@ ul.social_icon li a:hover {
     top: 80%;
 }
 
-/* Target body section images to stop vertical stretching */
-.about img, 
-.classes img, 
-[class*="about"] img, 
-[class*="class"] img {
-    width: 100% !important;
+/* Direct fix for body section photos */
+.about_section img,
+.classes_section img,
+.classes_main img,
+.main_about img {
     height: auto !important;
-    max-height: none !important;
+    max-height: 100% !important;
     object-fit: contain !important;
-    display: block !important;
 }
+
+.about_section .row,
+.classes_section .row,
+.classes_main .row,
+.main_about .row {
+    align-items: center !important;
+}
+
 
 
 }
