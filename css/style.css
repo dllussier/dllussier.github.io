@@ -1482,8 +1482,8 @@ ul.social_icon li a:hover {
 .row:has(> div > .about_img) .titlepage {
     padding-left: 0 !important;
     padding-right: 0 !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     width: 100% !important;
 }
 
