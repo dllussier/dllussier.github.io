@@ -1453,4 +1453,25 @@ ul.social_icon li a:hover {
     margin: 0 auto 20px auto !important;
 }
 
+.row:has(> div > .yoga_img) > div:has(.yoga_img),
+.row:has(> div > .about_img) > div:has(.about_img) {
+    order: 2 !important;
+}
+
+.row:has(> div > .yoga_img) > div:not(:has(.yoga_img)),
+.row:has(> div > .about_img) > div:not(:has(.about_img)) {
+    order: 1 !important;
+    text-align: center !important;
+}
+
+.about_img img,
+.yoga_img img {
+    max-width: 420px !important;
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+
 }
