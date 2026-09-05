@@ -1435,5 +1435,13 @@ ul.social_icon li a:hover {
 }
 
 
+.padding_right0:has(.about_img),
+.padding_right0:has(.yoga_img) {
+    width: 100% !important;
+    max-width: 500px !important;
+    flex: 0 0 100% !important;
+    margin: 0 auto 20px auto !important;
+}
+
 
 }
