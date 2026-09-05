@@ -1480,8 +1480,10 @@ ul.social_icon li a:hover {
 
 .row:has(> div > .yoga_img) .titlepage,
 .row:has(> div > .about_img) .titlepage {
-    padding: 0 !important;
-    margin: 0 auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     width: 100% !important;
 }
 
