@@ -1415,77 +1415,63 @@ ul.social_icon li a:hover {
     top: 80%;
 }
 
-.about_img,
-.yoga_img {
-    align-self: flex-start !important;
-    width: calc(100% - 60px) !important;
-    margin: 0 auto !important;
-}
-
-.about_img figure,
-.yoga_img figure {
-    margin: 0 auto !important;
-}
-
-.about_img figure img,
-.yoga_img figure img {
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
-}
-
-.row:has(> div > .yoga_img),
-.row:has(> div > .about_img) {
+.balance .row.d_flex,
+.middle .row.d_flex {
     flex-direction: column !important;
 }
 
-.row:has(> div > .yoga_img) > div,
-.row:has(> div > .about_img) > div {
+.balance .col-md-5,
+.balance .col-md-6,
+.middle .col-md-5,
+.middle .col-md-6 {
     width: 100% !important;
     max-width: 100% !important;
     flex: 0 0 100% !important;
     margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    box-sizing: border-box !important;
 }
 
 .yoga_img,
 .about_img {
-    max-width: 500px !important;
-    margin: 20px auto 20px auto !important;
-}
-
-.row:has(> div > .yoga_img) > div,
-.row:has(> div > .about_img) > div {
-    text-align: center !important;
-    padding: 20px 30px 0 30px !important;
-    box-sizing: border-box !important;
-}
-
-.about_img img,
-.yoga_img img {
     max-width: 420px !important;
+    margin: 20px auto !important;
+}
+
+.yoga_img figure,
+.about_img figure {
+    margin: 0 auto !important;
+}
+
+.yoga_img figure img,
+.about_img figure img {
     width: 100% !important;
     height: auto !important;
     display: block !important;
     margin: 0 auto !important;
 }
-.row:has(> div > .yoga_img) .titlepage,
-.row:has(> div > .about_img) .titlepage {
+
+.balance .titlepage,
+.middle .titlepage {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.balance .titlepage h2,
+.balance .titlepage p,
+.balance .titlepage a,
+.middle .titlepage h2,
+.middle .titlepage p,
+.middle .titlepage a {
     text-align: center !important;
 }
 
-.row:has(> div > .yoga_img) .titlepage a.read_more,
-.row:has(> div > .about_img) .titlepage a.read_more {
+.balance .titlepage a,
+.middle .titlepage a {
     display: inline-block !important;
 }
-
-.row:has(> div > .yoga_img) .titlepage,
-.row:has(> div > .about_img) .titlepage {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    width: 100% !important;
-}
-
 
 }
